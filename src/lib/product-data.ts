@@ -34,7 +34,7 @@ export const productData: Product = {
   logistica: {
     frete: {
       tipo: "Frete grátis",
-      previsaoEntrega: "Receba até 22 de out - 25 de out"
+      previsaoEntrega: ""
     },
     devolucao: {
       tipo: "Devolução grátis",
@@ -172,7 +172,7 @@ export const storeData: Store = {
     {
       titulo: "Políticas e aspectos legais",
       conteudo: "",
-      acao: "expandir_ou_navegar"
+acao: "expandir_ou_navegar"
     }
   ]
 };
@@ -187,5 +187,3 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   },
   {} as Record<string, ProductImage>
 );
-
-    

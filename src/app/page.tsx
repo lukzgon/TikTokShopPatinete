@@ -11,11 +11,39 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ProductOverview } from './components/product/ProductOverview';
 import { ProductDescription } from './components/product/ProductDescription';
 import { StoreInfo } from './components/store/StoreInfo';
+import { useState, useEffect } from 'react';
 
 
 export default function Home() {
   const product: Product = productData;
   const store: Store = storeData;
+  const [shippingDate, setShippingDate] = useState('');
+
+  useEffect(() => {
+    const calculateShippingDate = () => {
+      const prazoMinimo = 3;
+      const prazoMaximo = 6;
+
+      const dataMin = new Date();
+      dataMin.setDate(dataMin.getDate() + prazoMinimo);
+
+      const dataMax = new Date();
+      dataMax.setDate(dataMax.getDate() + prazoMaximo);
+
+      const formatarMes = (data: Date) => {
+        return data.toLocaleDateString('pt-BR', { month: 'short' }).replace('.', '');
+      };
+
+      const dia1 = dataMin.getDate();
+      const mes1 = formatarMes(dataMin);
+      const dia2 = dataMax.getDate();
+      const mes2 = formatarMes(dataMax);
+
+      return `Receba até ${dia1} de ${mes1} - ${dia2} de ${mes2}`;
+    };
+
+    setShippingDate(calculateShippingDate());
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -73,7 +101,7 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                     <Package className='w-5 h-5 text-muted-foreground'/>
                     <span className="font-semibold">{product.logistica.frete.tipo}</span>
-                    <p className="text-muted-foreground">{product.logistica.frete.previsaoEntrega}</p>
+                    {shippingDate && <p className="text-muted-foreground">{shippingDate}</p>}
                 </div>
                 <ChevronRight className="h-5 w-5 text-muted-foreground" />
             </button>
