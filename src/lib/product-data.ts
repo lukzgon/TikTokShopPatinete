@@ -94,7 +94,7 @@ export const productData: Product = {
               nota: 4,
               data: "2023-10-27T10:15:00Z",
               texto: "Recomendo, chegou 3 dias antes do prazo, muito bem embalado, com pilhas já nos controles, Vr carregado, vendedor responde em menos de 5 minutos e ajuda em qualquer situação, me envio a nota fiscal pelo email, melhor loja, super confiável.",
-              fotoUrlComentario: "https://i.postimg.cc/wBz8tnDf/Cn-P-02112025-210557.png",
+              fotoUrlComentario: "https://i.postimg.cc/85PCv7hQ/Imagem-do-Whats-App-de-2025-11-02-a-s-21-13-56-a1b60453.jpg",
               fotoUrlAutor: "https://i.postimg.cc/dtRXTFwr/Cn-P-24102025-235333.png"
           },
           "comentarioId_PR": {
