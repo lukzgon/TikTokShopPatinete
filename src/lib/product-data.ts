@@ -84,7 +84,7 @@ export const productData: Product = {
               cidade: "São Paulo, SP",
               nota: 5,
               data: "2023-10-27T10:00:00Z",
-              texto: "Comprei pro meu filho ele amou está indo pro trabalho com o patinete fácil fé andar praticidade na hora dd guardar produto excelente e meu filho conseguiu colocar no seguro.",
+              texto: "Aparentemente está tudo certo! Meu filho gostou muito do produto, que superou nossas expectativas. O vendedor foi extremamente atencioso e prestativo durante todo o processo. Recomendo!",
               fotoUrlComentario: null,
               fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
           },
