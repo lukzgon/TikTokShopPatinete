@@ -8,7 +8,7 @@ export const productData: Product = {
     nome: "NextWheel Store",
     urlIconeVerificacao: ""
   },
-  nome: "Meta Quest 3S 128 GB – Headset de Realidade Mista (VR) – Novo, Lacrado",
+  nome: "Meta Quest 2 256GB – Headset de Realidade Mista (VR) – Novo, Lacrado",
   marca: "Foston",
   modelo: "FS-S09 Pro",
   estatisticas: {
@@ -190,4 +190,5 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   },
   {} as Record<string, ProductImage>
 );
+
 
