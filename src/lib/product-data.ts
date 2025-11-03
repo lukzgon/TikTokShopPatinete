@@ -56,7 +56,7 @@ export const productData: Product = {
   barraAcoesFixa: {
     loja: { texto: "Loja" },
     chat: { texto: "Chat" },
-    carrinhoRapido: { icone: "carrinho", acao: "adicionar_carrinho" },
+    carrinhoRapido: { icone: "carrinho", acoao: "adicionar_carrinho" },
     comprarAgora: {
       texto: "Comprar agora",
       precoDetalhe: "R$ 67,90 | Frete grátis",
@@ -102,7 +102,7 @@ export const productData: Product = {
               cidade: "Belo Horizonte, MG",
               nota: 5,
               data: "2023-10-27T10:30:00Z",
-              texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade, uso para ir ao trabalho e foi uma escolha ótima adquirir o produto!!.",
+              texto: "Estou adorando meu Meta Quest 2! Funciona perfeitamente, a bateria dura bastante e é muito confortável de usar. Compra segura e totalmente recomendada.",
               fotoUrlComentario: "https://i.postimg.cc/PJ58d66z/Imagem-do-Whats-App-de-2025-11-02-a-s-21-13-57-f8c43402.jpg",
               fotoUrlAutor: "https://i.postimg.cc/hvWyfyYN/Cn-P-24102025-235423.png"
           },
@@ -190,3 +190,4 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   },
   {} as Record<string, ProductImage>
 );
+
