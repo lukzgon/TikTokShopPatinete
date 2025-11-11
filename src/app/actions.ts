@@ -13,7 +13,7 @@ export async function generateSummary(productName: string, reviews: ProductRevie
         nota: r.nota,
         cidade: r.cidade,
         texto: r.texto,
-        fotoUrlComentario: r.fotoUrlComentario,
+        fotoUrlComentario: r.fotoUrlComentario ?? null,
       })),
     });
     return { summary: result.summary, error: null };
@@ -22,3 +22,4 @@ export async function generateSummary(productName: string, reviews: ProductRevie
     return { summary: null, error: 'Failed to generate summary. Please try again.' };
   }
 }
+
